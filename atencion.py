@@ -82,4 +82,4 @@ def significado(frase: str, palabra: str = "banco", causal: bool = False) -> dic
 
 if __name__ == "__main__":
     frase = " ".join(sys.argv[1:]) or "pedí un crédito al banco"
-    print(frase, "→", significado(frase))
+    print(f"{frase}:", significado(frase))

@@ -30,5 +30,5 @@ ax.set_title(("Con máscara: " if causal else "") + frase)
 fig.tight_layout()
 fig.savefig("mapa.png", dpi=120)
 
-print(frase, "→ banco se parece a", significado(frase, causal=causal) if "banco" in palabras else "(no hay banco)")
+print(f"{frase}: banco se parece a", significado(frase, causal=causal) if "banco" in palabras else "(no hay banco)")
 print("Dibujo guardado en mapa.png")
